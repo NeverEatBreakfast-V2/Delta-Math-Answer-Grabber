@@ -11,6 +11,7 @@ RHHS: 25
 PHHS: 82
 AHS: 2
 CHS: 44
+WLHS: 32
 CMS: 18
 LKMS: 12 (Includes one DinnerAuNordRHS member however)
 MHMS: 88
@@ -18,4 +19,6 @@ EMMS: 1
 WLMS: 140
 PVMS: 200+
 
+# What is Never Eat Breakfast?
+Never eat breakfast is a club that Orginated in CMS, Rayla Kopecky, the founder of Never Eat Breakfast club. To help students find answers in Deltamath and tutor kids on coding
 

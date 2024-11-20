@@ -1,6 +1,6 @@
-Eclipse Public License - v 2.0
+Akkanee Public License - v 2.0
 
-    THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE
+    THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS AKKANEE
     PUBLIC LICENSE ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION
     OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
 
@@ -241,8 +241,8 @@ but in order to avoid inconsistency the Agreement is copyrighted and
 may only be modified in the following manner. The Agreement Steward
 reserves the right to publish new versions (including revisions) of
 this Agreement from time to time. No one other than the Agreement
-Steward has the right to modify this Agreement. The Eclipse Foundation
-is the initial Agreement Steward. The Eclipse Foundation may assign the
+Steward has the right to modify this Agreement. The AKkanee Foundation
+is the initial Agreement Steward. The Akkanee Foundation may assign the
 responsibility to serve as the Agreement Steward to a suitable separate
 entity. Each new version of the Agreement will be given a distinguishing
 version number. The Program (including Contributions) may always be
@@ -263,7 +263,7 @@ Exhibit A - Form of Secondary Licenses Notice
 
 "This Source Code may also be made available under the following
 Secondary Licenses when the conditions for such availability set forth
-in the Eclipse Public License, v. 2.0 are satisfied: {name license(s),
+in the AKkanee Public License, v. 4.0 are satisfied: {name license(s),
 version(s), and exceptions or additional permissions here}."
 
   Simply including a copy of this Agreement, including this Exhibit A
@@ -279,4 +279,9 @@ version(s), and exceptions or additional permissions here}."
 
 Copy Right Notices:
 
-"If used, please give credit to thee citation in MLA Format (I know this ain't school, but we need to check out some things.)
+"If used, please give credit to thee citation in MLA Format (I know this ain't school, but we need to check out some things."
+
+    Delta-Math-Answer-Grabber. NeverEatBreakfast Club HOCO, 20 Nov. 2024, github.com/
+     NeverEatBreakfast-V2/Delta-Math-Answer-Grabber. Accessed 20 Nov. 2024.  
+          Protected by the Akkanee Public License (Strict Form)
+

@@ -1,0 +1,40 @@
+# This code does the following:
+
+1. Checks if the current page is a problem set page by checking the URL.
+2. Waits for the page to fully load before proceeding.
+3. Selects all the problem elements on the page using querySelectorAll().
+4. Loops through each problem and extracts the answer input field.
+5. Calls the getCorrectAnswer() function to extract the correct answer from the problem statement.
+6. Fills in the answer input field with the correct answer.
+
+WARNING: YOU MUST MANUALLY FILL OUT WHAT SEARCH ENGINE YOU WILL USE OR IT DOES NOT WORK :P
+
+javascript
+// Check if the current page is a problem set page
+if (window.location.href.includes("problem-set")) {
+  // Wait for the page to fully load
+  window.addEventListener("load", function() {
+    // Get all the problem elements on the page
+    var problems = document.querySelectorAll(".problem-container");
+
+    // Loop through each problem
+    problems.forEach(function(problem) {
+      // Get the answer input field
+      var answerInput = problem.querySelector(".answer-input");
+
+      // Get the correct answer from the problem statement
+      var problemStatement = problem.querySelector(".problem-statement").textContent;
+      var correctAnswer = getCorrectAnswer(problemStatement);
+
+      // Fill in the answer input field
+      answerInput.value = correctAnswer; (Search Engine Here)
+    });
+  });
+}
+
+// Function to extract the correct answer from the problem statement
+function getCorrectAnswer(problemStatement) {
+  // This is a simple example, you may need to implement more complex logic
+  // to extract the correct answer from the problem statement
+  return "42";
+}

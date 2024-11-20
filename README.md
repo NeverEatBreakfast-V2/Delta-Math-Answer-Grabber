@@ -20,5 +20,23 @@ WLMS: 140
 PVMS: 200+
 
 # What is Never Eat Breakfast?
-Never eat breakfast is a club that Orginated in CMS, Rayla Kopecky, the founder of Never Eat Breakfast club. To help students find answers in Deltamath and tutor kids on coding
+Never eat breakfast is a club that Orginated in CMS, Rayla Kopecky, the founder of Never Eat Breakfast club. To help students find answers in Deltamath and tutor kids on coding.
+Members go by a codename or nickname.
+
+# Current Admins/Leaders/Mods.
+
+# Leaders:
+Rayla Kopecky
+
+# Admins:
+Akkanee
+Nuh Uh (<-- Litterially the Name)
+Slobagan 
+
+# Moderators:
+Great Dude 
+Eggman99
+HN
+
+
 

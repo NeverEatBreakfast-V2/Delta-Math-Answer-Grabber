@@ -1,0 +1,49 @@
+javascript
+// Create a custom navigation menu
+function createCustomNavMenu() {
+  // Get the current navigation menu elements
+  const navMenu = document.querySelector('#main-nav');
+
+  // Create new menu items
+  const dashboardLink = document.createElement('a');
+  dashboardLink.href = '/dashboard';
+  dashboardLink.textContent = 'Dashboard';
+
+  const resourcesLink = document.createElement('a');
+  resourcesLink.href = '/resources';
+  resourcesLink.textContent = 'Resources';
+
+  const policyGuideLink = document.createElement('a');
+  policyGuideLink.href = '/policy-guide';
+  policyGuideLink.textContent = 'Policy Guide';
+
+  // Add the new menu items to the navigation menu
+  navMenu.appendChild(dashboardLink);
+  navMenu.appendChild(resourcesLink);
+  navMenu.appendChild(policyGuideLink);
+}
+
+// Create a custom dashboard
+function createCustomDashboard() {
+  // Get the main content area
+  const contentArea = document.querySelector('#main-content');
+
+  // Create the dashboard elements
+  const dashboardHeader = document.createElement('h1');
+  dashboardHeader.textContent = 'Your Dashboard';
+
+  const resourcesSection = document.createElement('div');
+  resourcesSection.innerHTML = '<h2>Quick Links</h2><ul><li><a href="/grades">Grades</a></li><li><a href="/assignments">Assignments</a></li><li><a href="/calendar">Calendar</a></li></ul>';
+
+  const policySection = document.createElement('div');
+  policySection.innerHTML = '<h2>Policy Highlights</h2><p>Review the key points of the school\'s code of conduct and other important policies.</p><a href="/policy-guide">View Policy Guide</a>';
+
+  // Add the dashboard elements to the content area
+  contentArea.appendChild(dashboardHeader);
+  contentArea.appendChild(resourcesSection);
+  contentArea.appendChild(policySection);
+}
+
+// Run the custom navigation menu and dashboard functions
+createCustomNavMenu();
+createCustomDashboard();

@@ -1,0 +1,49 @@
+python
+import requests
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
+
+# Set up the Selenium webdriver
+driver = webdriver.Chrome()
+
+# Navigate to the Canvas login page
+driver.get("https://canvas.instructure.com/login")
+
+# Enter your Canvas login credentials
+username_input = driver.find_element_by_id("username")
+password_input = driver.find_element_by_id("password")
+username_input.send_keys("your_username")
+password_input.send_keys("your_password")
+password_input.send_keys(Keys.RETURN)
+
+# Navigate to the problem set page
+driver.get("https://canvas.instructure.com/courses/your_course_id/assignments/your_assignment_id")
+
+# Parse the HTML content of the page
+html_content = driver.page_source
+soup = BeautifulSoup(html_content, "html.parser")
+
+# Find all the problem statements and answer input fields
+problem_statements = soup.find_all("div", class_="problem-statement")
+answer_inputs = driver.find_elements_by_css_selector("input.answer-input")
+
+# Loop through the problem statements and answer input fields
+for i, (problem_statement, answer_input) in enumerate(zip(problem_statements, answer_inputs)):
+    # Extract the problem statement and the correct answer
+    problem_text = problem_statement.get_text().strip()
+    correct_answer = "42"  # Replace with your logic to extract the correct answer
+
+    # Fill in the answer input field
+    answer_input.send_keys(correct_answer)
+
+    # Print the problem statement and the entered answer
+    print(f"Problem {i+1}: {problem_text}")
+    print(f"Answer: {correct_answer}")
+
+    # Add a slight delay to avoid overwhelming the server
+    time.sleep(0.5)
+
+# Close the webdriver
+driver.quit()

@@ -1,0 +1,38 @@
+// Check if the current page is a problem set page
+if (window.location.href.includes("problem-set")) {
+  // Wait for the page to fully load
+  window.addEventListener("load", function() {
+    // Get all the problem elements on the page
+    var problems = document.querySelectorAll(".problem-container");
+
+    // Loop through each problem
+    problems.forEach(function(problem) {
+      // Get the problem number
+      var problemNumber = problem.querySelector(".problem-number").textContent;
+
+      // Get the problem statement
+      var problemStatement = problem.querySelector(".problem-statement").textContent;
+
+      // Get the answer input field
+      var answerInput = problem.querySelector(".answer-input");
+
+      // Add an event listener to the answer input field
+      answerInput.addEventListener("input", function() {
+        // Get the user's answer
+        var userAnswer = this.value;
+
+        // Check if the user's answer is correct
+        if (userAnswer === "42") {
+          // Mark the problem as correct
+          problem.classList.add("correct");
+        } else {
+          // Mark the problem as incorrect
+          problem.classList.add("incorrect");
+        }
+      });
+
+      // Log the problem information to the console
+      console.log("Problem #" + problemNumber + ": " + problemStatement);
+    });
+  });
+}
